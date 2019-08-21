@@ -1,0 +1,49 @@
+[{
+  "userId": "1",
+  "userName": "Tosif",
+  "password": "123456",
+  "userType": "Admin",
+  "firstName": "Tosif",
+  "lastName": "Pathan",
+  "emailId": "tosif.pathan@green-apex.com",
+  "mobile": "8866258257",
+  "address": [{
+    "street": "Near Kadri Party Plot",
+    "landmark": "TP 85, Sarkhej",
+    "city": "Ahemdabad",
+    "state": "Gujarat",
+    "pincode": "382210"
+  }]
+}, {
+  "userId": "2",
+  "userName": "Hardik",
+  "password": "123456",
+  "userType": "SME",
+  "firstName": "Hardik",
+  "lastName": "Parekh",
+  "mobile": "0987654321",
+  "emailId": "hardik.parekh@green-apex.com",
+  "address": [{
+    "street": "407, titanium one",
+    "landmark": "S.G. Highway",
+    "city": "Ahemdabad",
+    "state": "Gujarat",
+    "pincode": "380054"
+  }]
+}, {
+  "userId": "3",
+  "userName": "Mihir",
+  "password": "123456",
+  "userType": "PM",
+  "firstName": "Mihir",
+  "lastName": "Kadve",
+  "mobile": "7777788888",
+  "emailId": "mihir.kadve@green-apex.com",
+  "address": [{
+    "street": "A 1003, 1004 Empire Business Hub",
+    "landmark": "Science City Rd",
+    "city": "Ahemdabad",
+    "state": "Gujarat",
+    "pincode": "380060"
+  }]
+}]

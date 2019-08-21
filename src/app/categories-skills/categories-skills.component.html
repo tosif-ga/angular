@@ -1,0 +1,21 @@
+<div class="center-container">
+  <form class="form-category" [formGroup]="categoryForm" (ngSubmit)="category()">
+    <div class="form-group">
+      <h1>Category</h1>
+    </div>
+    <div class="form-group">
+      <label for="category"></label>
+      <input type="text" class="form-control" name="category" formControlName="category" placeholder="Enter Category">
+    </div>
+    <div class="form-group">
+      <app-select-option [items]="categoreList"></app-select-option>
+    </div>
+    <button type="submit" class="btn btn-primary" [disabled]="categoryForm.invalid">Save</button>
+  </form>
+  <div class="data-talbe">
+    <ngx-datatable class="material" [rows]="rows" [columns]="columns" [limit]="page.size" [count]="page.totalElements"
+      [offset]="page.pageNo" (page)='getCategories($event)' [columnMode]="'force'" [headerHeight]="50"
+      [footerHeight]="50" [columnMode]="'force'" [rowHeight]="'auto'">
+    </ngx-datatable>
+  </div>
+</div>

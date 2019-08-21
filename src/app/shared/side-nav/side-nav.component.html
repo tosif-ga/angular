@@ -1,0 +1,31 @@
+<div class="wrapper prac-side-left">
+  <!-- Sidebar -->
+  <nav id="sidebar">
+    <ul class="list-unstyled components">
+      <li *ngFor="let link of roleMenu">
+      <!-- <li> -->
+        <!-- <a class="pointer" [routerLink]="['/dashboard']" routerLinkActive="router-link-active">Dashboard</a> -->
+        <a class="pointer" [routerLink]="[link.routeLink]" routerLinkActive="router-link-active">{{ link.title }}</a>
+      </li>
+      <!-- <li>
+        <a class="pointer" [routerLink]="['/categories-skills']" routerLinkActive="router-link-active"
+          *ngIf="typePM">Categories & Skills</a>
+      </li>
+      <li>
+        <a class="pointer" [routerLink]="['/profile']" routerLinkActive="router-link-active"
+          *ngIf="typeAdmin || typePM">Profile</a>
+      </li>
+      <li>
+        <a class="pointer" [routerLink]="['/quesiton']" routerLinkActive="router-link-active"
+          *ngIf="typeAdmin">Quesiton</a>
+      </li>
+      <li>
+        <a class="pointer" [routerLink]="['/quiz']" routerLinkActive="router-link-active" *ngIf="typeAdmin">Quiz</a>
+      </li>
+      <li>
+        <a class="pointer" [routerLink]="['/report']" routerLinkActive="router-link-active" *ngIf="typeSME">Report</a>
+      </li> -->
+    </ul>
+  </nav>
+  <!-- Sidebar -->
+</div>

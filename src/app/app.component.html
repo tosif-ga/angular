@@ -1,0 +1,7 @@
+<app-header *ngIf="isLoggedIn()"></app-header>
+<app-side-nav *ngIf="isLoggedIn()"></app-side-nav>
+
+<div class="main">
+  <ngx-spinner></ngx-spinner>
+  <router-outlet></router-outlet>
+</div>

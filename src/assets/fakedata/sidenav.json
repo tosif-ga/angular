@@ -1,0 +1,36 @@
+[{
+    "title": "Dashboard",
+    "routeLink": "/dashboard",
+    "roleType": ["PM", "Admin", "SME"]
+  },
+  {
+    "title": "Google Map",
+    "routeLink": "/googlemap",
+    "roleType": ["PM", "Admin", "SME"]
+  },
+  {
+    "title": "Categories & Skills",
+    "routeLink": "/categories-skills",
+    "roleType": ["PM"]
+  },
+  {
+    "title": "Profile",
+    "routeLink": "/profile",
+    "roleType": ["PM", "Admin"]
+  },
+  {
+    "title": "Quesiton",
+    "routeLink": "/quesiton",
+    "roleType": ["Admin"]
+  },
+  {
+    "title": "Quiz",
+    "routeLink": "/quiz",
+    "roleType": ["Admin"]
+  },
+  {
+    "title": "Report",
+    "routeLink": "/report",
+    "roleType": ["SME"]
+  }
+]
