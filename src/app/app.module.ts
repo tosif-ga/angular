@@ -10,10 +10,14 @@ import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { AuthenticationGuard } from './authentication/authentication.guard';
 import { Interceptors } from './authentication/interceptors';
+import { HeaderComponent } from './shared/header/header.component';
+import { SideNavComponent } from './shared/side-nav/side-nav.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    SideNavComponent,
   ],
   imports: [
     BrowserModule,

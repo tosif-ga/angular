@@ -8,7 +8,8 @@ export const appConstants = {
             login: '/users/login',
         },
         categoryskill: {
-            category: '/categories'
-        }
+            category: '/categories',
+            skill: '/skills'
+        },
     }
 };

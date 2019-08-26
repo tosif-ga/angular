@@ -1,24 +1,11 @@
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NgSelectModule } from '@ng-select/ng-select';
-
-import { AppRoutingModule } from '../app-routing.module';
-import { HeaderComponent } from './header/header.component';
-import { SideNavComponent } from './side-nav/side-nav.component';
-import { SelectOptionComponent } from './select-option/select-option.component';
-
 
 @NgModule({
-  declarations: [
-    HeaderComponent,
-    SideNavComponent,
-    SelectOptionComponent
-  ],
+  declarations: [],
   imports: [
-    CommonModule,
-    AppRoutingModule,
-    NgSelectModule
+    CommonModule
   ],
-  exports: [HeaderComponent, SideNavComponent, SelectOptionComponent, CommonModule]
+  exports: [ CommonModule ]
 })
 export class SharedModule { }

@@ -11,7 +11,6 @@ export class CategoriesSkillsService {
   constructor(private http: HttpClient) {}
 
   category(categoryData) {
-    console.log(categoryData.category);
     const category = {
       name: categoryData.category
     };
@@ -29,8 +28,35 @@ export class CategoriesSkillsService {
       );
   }
 
+  skills(skillsData) {
+    const skills = {
+      name: skillsData.skills,
+      categoryRef: skillsData.category
+    };
+    return this.http
+      .post(
+        appConstants.baseUrl +
+          appConstants.version +
+          appConstants.api.categoryskill.skill,
+        skills
+      )
+      .pipe(
+        map(response => {
+          return response;
+        })
+      );
+  }
+
   getCategories(pageInfo) {
     return this.http.get(appConstants.baseUrl + appConstants.version + appConstants.api.categoryskill.category,
+      {params: {size: pageInfo.size, pageNo: pageInfo.pageNo} })
+    .pipe(map(response => {
+      return response;
+    }));
+  }
+
+  getSkills(pageInfo) {
+    return this.http.get(appConstants.baseUrl + appConstants.version + appConstants.api.categoryskill.skill,
       {params: {size: pageInfo.size, pageNo: pageInfo.pageNo} })
     .pipe(map(response => {
       return response;
